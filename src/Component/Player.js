@@ -49,7 +49,7 @@ useEffect(() => {
 
 const playingButton = () => {
     if (isPlaying) {
-        pause();
+        pause();  
         setIsPlaying(false);
     } else {
         play();
@@ -62,20 +62,19 @@ return (
         <h2>Playing Now</h2>
       <img
         className="musicCover"
-        src="https://picsum.photos/200/200"
+        src="https://picsum.photos/200/200?random=1"
+        //src="https://source.unsplash.com/random/200x200"
       />
       <div>
         <h3 className="title">DJDaddio</h3>
         <p className="subTitle">Help me if you can</p>
       </div>
-      <div>
-   
+      <div>   
           <button className="playButton" onClick={playingButton}>
-            <IconContext.Provider value={{ size: "3em", color: "#27AE60" }}>
+            <IconContext.Provider value={{ size: "3em", color: "#274E60" }}>
               {!isPlaying ? <AiFillPlayCircle /> : <AiFillPauseCircle /> }
             </IconContext.Provider>
           </button>
-
       </div>      
       <div>
         <div className="time">
