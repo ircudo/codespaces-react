@@ -45,12 +45,7 @@
 
 .timeline {
   width: 80%;
-  /* background-color: hsl(150, 95%, 38%); */
 }
-
-/* input[type="range"] {
-  background-color: #27ae60;
-} */
 
 @media (max-width: 700px) {
   .component {
