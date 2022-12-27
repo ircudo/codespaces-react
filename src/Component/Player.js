@@ -21,7 +21,7 @@ const [currTime, setCurrTime] = useState({
 const [seconds, setSeconds] = useState();
 
 useEffect(() => {
-    if (duration) {
+    // if (duration) {
       const sec = duration / 1000;
       const min = Math.floor(sec / 60);
       const secRemain = Math.floor(sec % 60);
@@ -29,7 +29,7 @@ useEffect(() => {
         min: min,
         sec: secRemain
       });
-    }
+    // }
   }, [isPlaying]);
 
 useEffect(() => {
@@ -97,7 +97,6 @@ return (
           }}
         />
       </div>
-
     </div>
 );
 
