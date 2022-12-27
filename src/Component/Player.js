@@ -28,7 +28,7 @@ useEffect(() => {
         min: min,
         sec: secRemain
       });
-  }, [isPlaying]);
+  }, [isPlaying, duration]);
 
 useEffect(() => {
     const interval = setInterval(() => {
@@ -62,6 +62,7 @@ return (
         className="musicCover"
         src="https://picsum.photos/200/200?random=1"
         //src="https://source.unsplash.com/random/200x200"
+        alt="random"
       />
       <div>
         <h3 className="title">DJDaddio</h3>
