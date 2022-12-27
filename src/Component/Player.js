@@ -35,7 +35,9 @@ useEffect(() => {
       if (sound) {
         setSeconds(sound.seek([])); // setting the seconds state with the current state
         const min = Math.floor(sound.seek([]) / 60);
-        const sec = Math.floor(sound.seek([]) % 60);
+        const secTemp = Math.floor(sound.seek([]) % 60);
+        const sec = ((secTemp < 10) ? ('0'+secTemp) : secTemp);
+        console.log("seconds: ", sec)
         setCurrTime({
           min,
           sec,
